@@ -43,6 +43,7 @@ Train a Unitree G1 humanoid to follow velocity commands on flat terrain:
 
 ```bash
 uv run train Mjlab-Velocity-Flat-Unitree-G1 --env.scene.num-envs 4096
+uv run train Mjlab-Velocity-Rough-Unitree-Go1 --env.scene.num-envs 4096
 ```
 
 **Multi-GPU Training:** Scale to multiple GPUs using `--gpu-ids`:
@@ -59,6 +60,7 @@ Evaluate a policy while training (fetches latest checkpoint from Weights & Biase
 
 ```bash
 uv run play Mjlab-Velocity-Flat-Unitree-G1 --wandb-run-path your-org/mjlab/run-id
+uv run play Mjlab-Velocity-Rough-Unitree-Go1
 ```
 
 ### 2. Motion Imitation
